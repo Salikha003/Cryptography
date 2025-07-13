@@ -1,0 +1,5 @@
+some_operating_mode_1.py: EBC
+some_operating_mode_2.py: CBC
+some_operating_mode_3.py: CFB
+some_operating_mode_4.py: OFB
+some_operating_mode_5.py: CTR

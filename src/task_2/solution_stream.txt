@@ -1,0 +1,18 @@
+Algoritm: RC4 (stream cipher)
+
+Topilgan xatoliklar:
+1. KSA (Kalitni ajratish algoritmi):
+   - Xato: (j + d[i] + b[i % c]) % 255
+   - To‘g‘risi: (j + d[i] + b[i % c]) % 256
+   - Sababi: RC4 256 elementli massiv ustida ishlaydi.
+
+2️. PRGA (Psevdo-Tasodifiy Oqim Generatori):
+   - Xato: c[(c[i] + c[i]) % 256]
+   - To‘g‘risi: c[(c[i] + c[j]) % 256]
+   - Sababi: keystream oqimini to‘g‘ri olish uchun indekslar to‘g‘ri aralashtirilishi kerak.
+
+Topilgan flag:
+S21{my_f4v0rit3_c1ph3r_i5_RC4}
+
+
+

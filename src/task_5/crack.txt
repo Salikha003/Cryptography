@@ -1,0 +1,5 @@
+S21{th1s_n0nc3_is_n0n_s3ns3_ch4_ch4_ch4}
+
+Instructor mistake:
+Used random.seed(int(time.time())) with 8-byte nonce (incorrect for ChaCha20, requires 12 bytes)
+nonce = struct.pack("<Q", random.randint(1, 2**64 - 1))
